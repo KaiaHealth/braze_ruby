@@ -29,6 +29,10 @@ module BrazeRuby
       BrazeRuby::REST::ExportUsers.new(braze_url).perform(api_key, payload)
     end
 
+    def identify_users(**payload)
+      BrazeRuby::REST::IdentifyUsers.new(braze_url).perform(api_key, payload)
+    end
+
     def list_segments
       BrazeRuby::REST::ListSegments.new(braze_url).perform(api_key)
     end
