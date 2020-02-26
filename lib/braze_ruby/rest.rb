@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'braze_ruby/rest/base'
+require 'braze_ruby/rest/create_user_aliases'
 require 'braze_ruby/rest/track_users'
 require 'braze_ruby/rest/send_messages'
 require 'braze_ruby/rest/schedule_messages'

@@ -37,6 +37,10 @@ module BrazeRuby
       BrazeRuby::REST::ListSegments.new(braze_url).perform(api_key)
     end
 
+    def create_user_aliases(**payload)
+      BrazeRuby::REST::CreateUserAliases.new(braze_url).perform(api_key, payload)
+    end
+
     attr_reader :api_key, :braze_url
 
     def initialize(api_key, braze_url)
