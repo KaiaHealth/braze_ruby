@@ -41,6 +41,10 @@ module BrazeRuby
       BrazeRuby::REST::CreateUserAliases.new(braze_url).perform(api_key, payload)
     end
 
+    def delete_user_aliases(**payload)
+      BrazeRuby::REST::DeleteUserAliases.new(braze_url).perform(api_key, payload)
+    end
+
     attr_reader :api_key, :braze_url
 
     def initialize(api_key, braze_url)
